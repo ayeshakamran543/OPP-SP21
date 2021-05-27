@@ -1,32 +1,18 @@
 
-package rectangle;
+package shape;
+public class Rectangle  implements Shape{
+    private double l;
+    private double w;
 
-public class Rectangle {
-    private int length;
-    private int width;
-    public Rectangle(){
-        length=3;
-        width=4;
+    public Rectangle(double l, double w) {
+        this.l = l;
+        this.w = w;
     }
-    public Rectangle(int l,int w){
-        length=l;
-        width=w;
+    @Override
+    public double area() {
+       return l*w;
     }
-    public void setLength(int l){
-        length=l;
-    }
-    public void setWidth(int w){
-        width=w;
-    }
-    public int getLength(){
-        return(length);
-    }
-    public int getWidth(){
-        return(width);
-    }
-    public int Area(){
-        return(length*width);
-    }
+
     
     
 }
